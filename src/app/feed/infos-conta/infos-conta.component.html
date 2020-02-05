@@ -1,0 +1,11 @@
+<h1>Bem-vindo ao <b>InternetBanking!</b></h1>
+<mat-divider></mat-divider>
+<br>
+<br>
+
+<p>Olá, {{this.nome}}</p>
+<p>Conta-corrente: {{this.numeroConta}}</p>
+<p>Agência: 000{{this.numeroAgencia}}</p>
+<p><mat-icon (click)="getSaldo()" *ngIf="mostrarSaldo == false">visibility</mat-icon>
+<mat-icon (click)="getSaldo()" *ngIf="mostrarSaldo == true">visibility_off</mat-icon>
+Saldo: <strong *ngIf="mostrarSaldo == true">R$ {{this.saldo}}</strong></p>

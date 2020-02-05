@@ -1,0 +1,74 @@
+.conteudo mat-progress-bar{
+  width: 98%;
+}
+
+.menu-lateral{
+    float: left;
+    width: 23vw;
+    height: 100vh;
+    background-color: #5D8BE8;
+    position: fixed;
+    left: 0;
+}
+
+.menu-lateral button{
+    background-color: #5D8BE8;
+    font-size: large;
+    color: white;
+    width: 100%;
+    height: 50px;
+    border-radius: 0;
+}
+
+.menu-lateral button:focus{
+  background-color: rgb(44, 44, 128);
+}
+
+.menu-lateral .config{
+  position: absolute;
+  width: 23vw;
+  z-index: 9999;
+  bottom: 100px;
+}
+
+.menu-lateral .config button{
+  background-color: rgb(44, 44, 128);
+}
+
+.menu-lateral .config button:hover{
+  background-color: #5D8BE8;
+}
+
+.menu-lateral .saldo{
+  position: fixed;
+  margin-left: 0;
+  margin-top: 0;
+  width: 23vw;
+  color: white;
+}
+
+.botaoConfig{
+  position: absolute;
+  z-index: 9999;
+  bottom: 50px;
+}
+
+.logout{
+  position: absolute;
+  bottom: 0;
+}
+
+.conteudo{
+  z-index: -999999;
+  float: right;
+  width: 75vw;
+  height: 100vh;
+  padding-top: 15px;
+}
+
+.saldo{
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  color: rgb(44, 44, 128);
+}

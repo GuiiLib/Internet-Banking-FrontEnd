@@ -1,0 +1,29 @@
+<div class="content">
+    <h1>Desativar conta</h1>
+    <mat-divider></mat-divider>
+    <h4>Deseja realmente desativar a sua conta do InternetBanking?</h4>
+    <p>Para desativar sua conta, por favor insira sua senha de acesso.</p>
+
+    <form [formGroup]="inativarContaFormGroup">
+        <p><input type="password" name="senhaAcesso" formControlName="senhaAcesso" placeholder="Senha de acesso" minlength="8" maxlength="15"></p>
+        <p *ngIf="inativarContaFormGroup.invalid && inativarContaFormGroup.touched"><small>Algum campo possui informações inváilidas!</small></p>
+
+        <button mat-button (click)="inativarConta()" [disabled]="inativarContaFormGroup.invalid">Desativar Conta</button>
+        <div *ngIf="erro==true">
+        <br>
+            <p>
+                <small>
+                    Não foi possível desativar sua conta.
+                </small>
+            <br>
+                <small>
+                    Você digitou alguma informação incorretamente,
+                </small>
+            <br>    
+                <small>
+                    ou ainda há saldo existente na conta.
+                </small>
+            </p>
+        </div>
+    </form>
+</div>

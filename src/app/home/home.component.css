@@ -1,0 +1,43 @@
+.background{
+    width: 100vw;
+    height: 91.5vh;
+    background-image: url("../../assets/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    height: 40vh;
+}
+
+.content{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.titulo{
+    float: right;
+    color: white;
+    text-align: center;
+}
+
+button{
+    color: #5D8BE8;
+    background-color: white;
+    border: none;
+    font-size: larger;
+    height: 50px;
+    width: 200px;
+}
+
+h3, h1{
+    color: white;
+}
+
+h1{
+     font-size: 72px;
+}
